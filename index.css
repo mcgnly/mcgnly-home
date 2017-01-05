@@ -100,7 +100,7 @@ section.module p {
   font-size: 1.2em;
   font-weight: 300;
   font-family: sans-serif;
-
+  line-height: 2em;
 }
 section.module p:last-child {
   margin-bottom: 0;
