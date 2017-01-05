@@ -1,4 +1,57 @@
 /* ============================================================
+  RESET
+============================================================ */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* ============================================================
   PRIMARY STRUCTURE
 ============================================================ */
 .container {
@@ -8,27 +61,33 @@
 }
 h1{
   font-family: monospace;
+  padding:.2em;
+  background-color: rgba(255, 255, 255, .5);
 }
 h2{
   font-family: monospace;
 }
 section{
-  background-color: #53586b;
+  background-color: #3F51B5;
+  color:#FFFFFF;
 }
 /* ============================================================
   SECTIONS
 ============================================================ */
-section.module:last-child {
+/*section.module:last-child {
   margin-bottom: 0;
-}
+}*/
 section.module h2 {
-  margin-bottom: 40px;
+  margin-bottom: .75em;
   font-size: 30px;
 }
 section.module p {
-  margin-bottom: 40px;
+  margin-top: 0em;
   font-size: 16px;
+  font-size: 1.2em;
   font-weight: 300;
+  font-family: sans-serif;
+
 }
 section.module p:last-child {
   margin-bottom: 0;
@@ -37,32 +96,43 @@ section.module.content {
   padding: 40px 0;
 }
 section.module.parallax {
-  height: 600px;
+  
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height:600px;
 }
 section.module.parallax h1 {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 48px;
-  line-height: 12em;
+  color: #0653a2;
+  font-size: 200px;
+  
+    /*line-height: 6em;*/
+    /*margin-top: 3em;*/
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 section.module.parallax-1 {
-  background-image: url("./img/glasses.jpeg");
+  background-image: url("./img/IMG_3182.JPG");
+  background-position-y: -225px;
 }
 section.module.parallax-2 {
-  background-image: url("./img/nasa.png");
+  background-image: url("./img/Margaret_Hamilton.gif");
+  background-position-y: -140px; 
 }
 section.module.parallax-3 {
-  background-image: url("./img/switchboard.jpg");
+  background-image: url("./img/Reprogramming_ENIAC.png");
 }
 
-@media all and (min-width: 600px) {
+section.module.parallax-4 {
+  background-image: url("./img/Grace_Hopper_and_UNIVAC.jpg");
+  background-position-y: -300px; 
+}
+/*@media all and (min-width: 600px) {
   section.module h2 {
     font-size: 42px;
   }
@@ -71,10 +141,15 @@ section.module.parallax-3 {
   }
   section.module.parallax h1 {
     font-size: 96px;
+    height: 4em;
+    /*line-height: 6em;
+    margin-top: 3em;
   }
 }
 @media all and (min-width: 960px) {
   section.module.parallax h1 {
     font-size: 160px;
+    height: 6em;
+    line-height: 5em;
   }
-}
+}*/
