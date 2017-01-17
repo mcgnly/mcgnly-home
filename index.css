@@ -146,6 +146,34 @@ section.module.parallax-4 {
   background-image: url("./img/Grace_Hopper_and_UNIVAC.jpg");
   background-position-y: -300px; 
 }
+
+a.hidden {
+  position: absolute;
+  left: -999px;
+}
+a.hidden:focus {
+    left: 5px;
+    text-decoration: none;
+    background-color: red;
+    padding: 10px;
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 1.6em;
+}
+.navbarLinks{
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: 1.6em;
+  color: #212121;
+}
+.navbarLinks>ul>li>a{
+  text-decoration: none;
+  font-size: 1.6em;
+  color: #212121;
+}
 /*@media all and (min-width: 600px) {
   section.module h2 {
     font-size: 42px;
