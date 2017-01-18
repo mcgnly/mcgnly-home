@@ -133,6 +133,9 @@ section.module.parallax h1 {
 section.module.parallax-1 {
   background-image: url("./img/IMG_3182.JPG");
   background-position-y: -225px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 section.module.parallax-2 {
   background-image: url("./img/Margaret_Hamilton.gif");
@@ -168,6 +171,11 @@ a.hidden:focus {
   font-weight: bolder;
   font-size: 1.6em;
   color: #212121;
+}
+.navbar{
+  margin-bottom: 6em;
+  padding-bottom: .1em;
+  background-color: #b2dfdb;
 }
 .navbarLinks>ul>li>a{
   text-decoration: none;
