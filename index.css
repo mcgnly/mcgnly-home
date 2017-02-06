@@ -177,6 +177,24 @@ a.hidden:focus {
   font-size: 1.6em;
   color: #dde6e6;
 }
+
+.projectsItem{
+  position: static;
+  display: block;
+}
+.projectsLink{
+  position: relative;
+  border: red dashed;
+  display: inline-block;
+  width: 20%;
+}
+.projectsItem p{
+  width: 50%;
+  display: inline-block;
+  position: relative;
+  left: 10%;
+  border: yellow dashed;
+}
 /*@media all and (min-width: 600px) {
   section.module h2 {
     font-size: 42px;
