@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico"> -->
-	<title>React App</title>
+	<title>mcgnly</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
   </head>
 
@@ -38,26 +38,54 @@
 		</div>
 	</section>
 
-	<section class="module content">
+	<section class="module content projects">
 		<div class="container">
-			<h2 tabindex="0">Here you can find a brief sample of my projects so far.</h2>
-			<ul>
-				<li tabindex="0">
-					<p>afp-alert</p>
-					<section class = "afp"></section>
-				</li>
-				<li tabindex="0">
-					<p>architectin</p>
-					<section class = "architectin"></section>
+			<h2 tabindex="0">Here you can find a few of my projects so far.</h2>
+			<ul class="projects">
+				<li class="projectsItem" tabindex="0">
+					<a class="projectsLink" href="https://github.com/mcgnly/email-keyword" target="_blank" title="follow Amanda Palmer on tour">AFP-Alert</a>
+					<p>Amanda Palmer is an American musician who tours a lot, and has a tenency to do free concerts here and there with short notice given on Twitter. I created a tool to watch her twitter and send out an email alert when she mentions a chosen town, so that people who sign up for the service will know if she is thinking of coming to their area. Tool and website built with meteor, database to hold collections of emails and keywords on Mongo, hosted on AWS. Available at: 
+						<a href="http://afp-alert.mcgnly.com/" target="_blank" title="afp-alert">AFP-Alert.mcgnly.com</a>
+					</p>
+				</li> 
+				<li class="projectsItem" tabindex="0">
+					<a class="projectsLink" href="https://github.com/mcgnly/basic-redux" target="_blank" title="teaching tool for react and redux">Basic Redux</a>
+					<p>While I was teaching a couple of people about the basics of development in react and how to incorporate redux, I built a tool to explain the basics and make it easy to interact with different elements to better understand how they fit together. Built using create-react-app, redux, less, and gulp.</p>
+				</li> 
+				<li class="projectsItem" tabindex="0">
+					<a class="projectsLink" href="https://github.com/relayr/browser-sdk" target="_blank" title="javascript IOT tools">relayr Browser SDK</a>
+					<p>APIs make it possible for the average developer to interact with a given set of server-side functions and data, but SDKs make that job even easier, by abstracting away the tasks of making AJAX calls, interacting with OAuth, and other internal details. The browser SDK built for relayr makes it easy for a developer to use standard javascript to interact with their IOT devices and use the data for whatever projects they might have in mind. Built using ES6 and Webpack. </p>
 				</li>  
-				<li tabindex="0">
-					<p>notification service</p>
-					<section class = "notification"></section>
-				</li>
-				<li tabindex="0">
-					<p>this portfolio</p>
-					<section class = "portfolio"></section>
-				</li>                          
+				<li class="projectsItem" tabindex="0">
+					<a class="projectsLink" href="https://github.com/mcgnly/99-bottles" target="_blank" title="small IOT dashboard">99 Bottles</a>
+					<p>Using the relayr browser SDK, I built a dashboard and small tool which, when paired with an IOT enabled scale, can report the number of bottles left in a case of beer. This concept can of course be extended to report any kind of weight-based counting task with recalibration of the scale. Developed as a demo for a large German grocery chain. Built using ES6, JQuery, and Webpack. </p>
+				</li>  
+				<li class="projectsItem" tabindex="0">
+					<a class="projectsLink" href="https://github.com/mcgnly/alexa-catfacts" target="_blank" title="silly amazon alexa app">Amazon Alexa Cat-Facts</a>
+					<p>As part of my interest in developing my skills in different directions, I learned how to build apps for the Amazon Alexa. These use voice-control to accomplish different tasks, in this case, to poll an API for a random fact about cats, and return the information to the user also over speech. Built using Node and Amazon Lambda. Available at:
+						<a href="https://www.amazon.com/mcgnly-Cat-Facts/dp/B01NAIJLDB/ref=sr_1_1?s=digital-skills&ie=UTF8&qid=1486298581&sr=1-1&keywords=mcgnly" target="_blank" title="silly amazon alexa app">Amazon Alexa app store</a>
+					</p>
+				</li>  
+				<li class="projectsItem" tabindex="0">
+					<a class="projectsLink" href="https://github.com/mcgnly/alexa-cooking" target="_blank" title="silly amazon alexa app">Amazon Alexa Meat Thermometer</a>
+					<p>The second in a series of apps built for Amazon Alexa, this app has a database of cooking temperatures for common cuts of meat, and interacts with the user over voice. I was tired of always having to look up the temperature for pork tenderlion...  Built using Node and Amazon Lambda. Available at: 
+						<a href="https://www.amazon.com/mcgnly-Meat-Thermometer/dp/B01MRYWBBJ/ref=sr_1_3?s=digital-skills&ie=UTF8&qid=1486298581&sr=1-3&keywords=mcgnly" target="_blank" title="silly amazon alexa app">Amazon Alexa app store</a>
+					</p>
+				</li> 
+				<li class="projectsItem" tabindex="0">
+					<a class="projectsLink" href="https://github.com/mcgnly/alexa-iss" target="_blank" title="silly amazon alexa app">Amazon Alexa Space Station Locater</a>
+					<p>Third in a series of apps built for Amazon Alexa. This one takes the current time and returns the point on Earth over which the International Space Station is at this very second. Built using Node and Amazon Lambda. Available at:
+						<a href="https://www.amazon.com/mcgnly-Space-Station/dp/B01MZ2ONRB/ref=sr_1_2?s=digital-skills&ie=UTF8&qid=1486298736&sr=1-2&keywords=mcgnly" target="_blank" title="silly amazon alexa app">Amazon Alexa app store</a>
+					</p>
+				</li> 
+				<li class="projectsItem" tabindex="0">
+					<a class="projectsLink" href="https://github.com/mcgnly/million-monkeys" target="_blank" title="python toy">Million Monkeys</a>
+					<p>An infinitie number of monkeys on infinite typewriters given infinite time would eventually be able to produce the collected works of Shakespeare...As part of the process of learning to use Python, I developed a toy command-line app that, when given a particular string, will replicate it using randomly generated characters, and count the number of repetitions it takes to recreate the given word or phrase.</p>
+				</li> 
+				<li class="projectsItem" tabindex="0">
+					<a class="projectsLink" href="https://github.com/mcgnly/mcgnly-home" target="_blank" title="portfolio page">mcgnly</a>
+					<p>The source code for this page! My focus here was creating a concise overview of the projects I have worked on unitl now, a place to host my resume, and to learn concepts relating to accessability. Built using Github-pages.</p>
+				</li> 
 			</ul>
 		</div>
 	</section>
@@ -71,10 +99,16 @@
 	<section class="module content">
 		<div class="container">
 			<h2 tabindex="0">Contact Me:</h2>
-			<ul tabindex="0">
-				<p>katie@mcgnly.com</p>
-				<p>github: mcgnly</p>
-				<p>linkedin: mcgnly</p>
+			<ul class="contact" tabindex="0">
+				<li>
+					<a href="mailto:katie@mcgnly.com" title="The shorter it is, the quicker I can reply">Email: katie@mcgnly.com</a>
+				</li>
+				<li>
+					<a href="https://github.com/mcgnly" target="_blank" title="See some things I made for the internet">GitHub: mcgnly</a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/mcgnly/" target="_blank" title="Social networking for adults">Linkedin: mcgnly</a>
+				</li>	
 			</ul>
 		</div>
 	</section>
@@ -88,7 +122,18 @@
   	<section class="module content">
 		<div class="container">
 			<h2 tabindex="0">Notes on Design</h2>
-			<p tabindex="0">This website was made with accessability in mind. Fill in the reasons why here: XXXXXXXX</p>
+			<p tabindex="0">This website was made with accessability in mind.</p>
+			<ul>
+				<li tabindex="0">
+					<p>Contrast: according to best practices set forth by WCAG AAA standard, the contrast between normal-sized text and background should be a minimum of 7:1. On this page it is 7.14:1</p>
+				</li>
+				<li tabindex="0">
+					<p>Colors: the palette here was kept to a relatively monochromatic scale, in order to be readable by people with different forms of color blindness, and the text is slightly darker than white in order to be more readable by people with dyslexia.</p>
+				</li>  
+				<li tabindex="0">
+					<p>Screen readers: this page is tab-through-able, and on the first tab reveals a "skip to content" button, which bypasses the navbar.</p>
+				</li>                       
+			</ul>
 		</div>
 	</section>
 

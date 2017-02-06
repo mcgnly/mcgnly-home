@@ -66,17 +66,21 @@ h1{
 }
 h2{
   font-family: monospace;
-  color: #f2f7f7;
+  color: #efefef;
 }
 section{
-  background-color: #3F51B5;
+  background-color: #37479e;
   color:#FFFFFF;
 }
 
 p{
-  color: #f2f7f7;
+  color: #efefef;
 }
 
+ul{
+  list-style-type:disc;
+  margin-left: 2em;
+}
 /* ============================================================
   SECTIONS
 ============================================================ */
@@ -106,7 +110,6 @@ section.module.content {
   height: 25em;
 }
 section.module.parallax {
-  
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -169,13 +172,55 @@ a.hidden:focus {
 .navbar{
   margin-bottom: 6em;
   padding: .1em 2em;
-  background-color: #3F51B5;
+  background-color: #37479e;
 }
 .navbarLinks a{
   text-decoration: none;
   font-weight: 200;
   font-size: 1.6em;
-  color: #dde6e6;
+  color: #efefef;
+}
+
+.projectsItem{
+  position: relative;
+  display: block;
+  margin-bottom: 5em;
+}
+.projectsLink{
+  position: absolute;
+  /*border: red dashed;*/
+  display: inline-block;
+  width: 20%;
+  top: 20%;
+}
+.projectsItem p{
+  width: 50%;
+  display: inline-block;
+  position: relative;
+  left: 40%;
+  /*border: yellow dashed;*/
+}
+
+.projects a{
+  color: #efefef; 
+  font-family: monospace;
+  font-size: 24px;
+}
+
+.sidebar{
+  border:dashed red;
+  width:700px;
+}
+.module.content.projects{
+  height:210em;
+}
+
+.contact a{
+  color: #efefef; 
+  font-family: monospace;
+  padding-right: 5em;
+  font-size: 24px;
+  text-decoration:none;
 }
 /*@media all and (min-width: 600px) {
   section.module h2 {
