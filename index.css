@@ -81,6 +81,9 @@ ul{
   list-style-type:disc;
   margin-left: 2em;
 }
+a{
+  cursor: pointer;
+}
 /* ============================================================
   SECTIONS
 ============================================================ */
@@ -91,14 +94,6 @@ section.module h2 {
   border-style: solid;
 }
 
-/* @media all and (min-width: 960px) {
-  section.module.parallax h1 {
-    font-size: 160px;
-    height: 6em;
-    line-height: 5em;
-  }
-}
- */
 section.module p {
   margin-top: 0em;
   font-size: 16px;
@@ -107,10 +102,6 @@ section.module p {
   font-family: sans-serif;
   line-height: 2em;
 }
-section.module p:last-child {
-  margin-bottom: 0;
-}
-
 
 section.module.content {
   padding: 2em;
@@ -121,10 +112,8 @@ section.module.parallax {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height:600px;
+  height: 40em;
+  position:static;
 }
 section.module.parallax h1 {
   color: #212121;
@@ -132,13 +121,11 @@ section.module.parallax h1 {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 1em;
 }
 section.module.parallax-1 {
   background-image: url("./img/IMG_3182.JPG");
-  background-position-y: -225px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  background-position-y: -100px;
 }
 section.module.parallax-2 {
   background-image: url("./img/Margaret_Hamilton.gif");
@@ -150,7 +137,8 @@ section.module.parallax-3 {
 
 section.module.parallax-4 {
   background-image: url("./img/Grace_Hopper_and_UNIVAC.jpg");
-  background-position-y: -300px; 
+  background-position-y: -200px;
+  overflow-x: hidden;
 }
 
 a.hidden {
@@ -168,16 +156,20 @@ a.hidden:focus {
 }
 .navbarLinks{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   text-decoration: none;
   font-family: monospace;
   font-weight: bolder;
+  list-style-type:none;
+  margin:.5em 0em;
 }
 .navbar{
   margin-bottom: 6em;
-  padding: .1em 2em;
   background-color: #37479e;
   position:fixed;
+  display:block;
+  z-index:100;
+  width: 100%
 }
 .navbarLinks a{
   text-decoration: none;
@@ -193,7 +185,6 @@ a.hidden:focus {
 }
 .projectsLink{
   position: absolute;
-  /*border: red dashed;*/
   display: inline-block;
   width: 20%;
   top: 20%;
@@ -203,7 +194,6 @@ a.hidden:focus {
   display: inline-block;
   position: relative;
   left: 40%;
-  /*border: yellow dashed;*/
 }
 
 .projects a{
@@ -240,7 +230,6 @@ section.about .navbar a.about{
   }
   section.module.parallax h1 {
     font-size: 70px;
-    margin-top: 1em;
   }
   section.module a{
     font-size: 18px;
@@ -249,6 +238,8 @@ section.about .navbar a.about{
     background-position-y: 0em;
     background-size: 130%;
     height: 300px;
+    padding-top: 50px;
+    box-sizing: border-box;
   }
   section.module.parallax-2 {
     background-position-y: 0em;
@@ -266,5 +257,8 @@ section.about .navbar a.about{
   }
   .navbar{
     margin-bottom: 0em;
+  }
+  .navbar a{
+    font-size: 1em;
   }
 }
