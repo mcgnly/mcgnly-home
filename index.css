@@ -109,7 +109,7 @@ section.module p:last-child {
 
 section.module.content {
   padding: 2em;
-  height: 25em;
+  height: auto;
 }
 section.module.parallax {
   background-position: 50% 50%;
@@ -175,6 +175,7 @@ a.hidden:focus {
   margin-bottom: 6em;
   padding: .1em 2em;
   background-color: #37479e;
+  position:fixed;
 }
 .navbarLinks a{
   text-decoration: none;
@@ -214,7 +215,7 @@ a.hidden:focus {
   width:700px;
 }
 .module.content.projects{
-  height:210em;
+  height:auto;
 }
 
 .contact a{
@@ -225,6 +226,9 @@ a.hidden:focus {
   text-decoration:none;
 }
 
+section.about .navbar a.about{
+  background-color: red;
+}
 @media(max-width: 600px) {
   section.module p {
     font-size: 16px;
@@ -233,30 +237,32 @@ a.hidden:focus {
     font-size: 20px;
   }
   section.module.parallax h1 {
-    font-size: 95px;
+    font-size: 70px;
+    margin-top: 1em;
   }
   section.module a{
     font-size: 18px;
   }
+  section.module.parallax-1 {
+    background-position-y: 0em;
+    background-size: 130%;
+    height: 300px;
+  }
+  section.module.parallax-2 {
+    background-position-y: 0em;
+    background-size: 150%;
+  }
+  section.module.parallax-3 {
+    background-position-x: -475px;
+    background-position-y: 0px;
+  }
+  section.module.parallax-4 {
+    background-position-y: 0px;
+  }  
+  ul{
+    margin-left:0em;
+  }
+  .navbar{
+    margin-bottom: 0em;
+  }
 }
-/*@media all and (min-width: 600px) {
-  section.module h2 {
-    font-size: 42px;
-  }
-  section.module p {
-    font-size: 20px;
-  }
-  section.module.parallax h1 {
-    font-size: 96px;
-    height: 4em;
-    /*line-height: 6em;
-    margin-top: 3em;
-  }
-}
-@media all and (min-width: 960px) {
-  section.module.parallax h1 {
-    font-size: 160px;
-    height: 6em;
-    line-height: 5em;
-  }
-}*/
