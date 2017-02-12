@@ -154,6 +154,7 @@ a.hidden:focus {
     font-family: monospace;
     font-weight: bolder;
     font-size: 1.6em;
+    top:1.5em;
 }
 .navbarLinks{
   display: flex;
@@ -217,6 +218,10 @@ a.hidden:focus {
   padding-right: 5em;
   font-size: 24px;
   text-decoration:none;
+}
+
+ul.accessibility{
+  list-style-type: disc;
 }
 
 section.about .navbar a.about{
