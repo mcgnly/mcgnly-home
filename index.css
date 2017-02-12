@@ -84,9 +84,6 @@ ul{
 /* ============================================================
   SECTIONS
 ============================================================ */
-/*section.module:last-child {
-  margin-bottom: 0;
-}*/
 section.module h2 {
   margin-bottom: .75em;
   font-size: 30px;
@@ -94,6 +91,14 @@ section.module h2 {
   border-style: solid;
 }
 
+/* @media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 160px;
+    height: 6em;
+    line-height: 5em;
+  }
+}
+ */
 section.module p {
   margin-top: 0em;
   font-size: 16px;
@@ -122,9 +127,6 @@ section.module.parallax {
 section.module.parallax h1 {
   color: #212121;
   font-size: 200px;
-  
-    /*line-height: 6em;*/
-    /*margin-top: 3em;*/
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
@@ -222,24 +224,33 @@ a.hidden:focus {
   font-size: 24px;
   text-decoration:none;
 }
-/*@media all and (min-width: 600px) {
+
+.projectsItem{
+  position: static;
+  display: block;
+}
+.projectsLink{
+  position: relative;
+  border: red dashed;
+  display: inline-block;
+  width: 20%;
+}
+.projectsItem p{
+  width: 50%;
+  display: inline-block;
+  position: relative;
+  left: 10%;
+  border: yellow dashed;
+}
+
+@media(min-width: 600px) {
   section.module h2 {
-    font-size: 42px;
+    font-size: 16px;
   }
   section.module p {
-    font-size: 20px;
+    font-size: 12px;
   }
   section.module.parallax h1 {
-    font-size: 96px;
-    height: 4em;
-    /*line-height: 6em;
-    margin-top: 3em;
+    font-size: 100px;
   }
 }
-@media all and (min-width: 960px) {
-  section.module.parallax h1 {
-    font-size: 160px;
-    height: 6em;
-    line-height: 5em;
-  }
-}*/
