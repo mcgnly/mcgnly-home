@@ -30,7 +30,8 @@
 	<section class="module content about">
 		<div class="container">
 			<h2 tabindex="0">About Me</h2>
-			<p tabindex="0">Hi! I'm Katie, a front-end developer located in Berlin, Germany, specialising in static pages and react. I have a past as a mechanical engineer, and a passion for hacking, building, solving problems, travel, and learning languages... if you count computer and human languages, I've got 8 so far. I am currently working on deepening my knowledge of backend and dev-ops technologies, as well as exploring different tools in the front-end.
+			<p tabindex="0">
+				Hi! I'm Katie, a fullstack developer located in Berlin, Germany, though I particularly like react and express. I have a past as a mechanical engineer, and a passion for building things, solving problems, travel, and learning languages... I have studied French, Italian, German, Irish Gaelic, Thai, Spanish, and am currently learning modern Greek... but I work primarily in javascript. I also enjoy building silly projects in my free time, and getting better at backend and devops.
 			</p>
 		</div>
 	</section>
@@ -46,9 +47,16 @@
 			<h2 tabindex="0">Here you can find a few of my projects so far.</h2>
 			<ul class="projects">
 				<li class="projectsItem" tabindex="0">
-					<a class="projectsLink" href="https://github.com/mcgnly/email-keyword" target="_blank" title="follow Amanda Palmer on tour">AFP-Alert</a>
-					<p>Amanda Palmer is an American musician who tours a lot, and has a tendency to do free concerts here and there with short notice given on Twitter. I created a tool to watch her twitter and send out an email alert when she mentions a chosen town, so that people who sign up for the service will know if she is thinking of coming to their area. Tool and website built with meteor, database to hold collections of emails and keywords on Mongo, hosted on AWS. Available at: 
-						<a href="http://afp-alert.mcgnly.com/" target="_blank" title="afp-alert">AFP-Alert.mcgnly.com</a>
+					<a class="projectsLink" href="https://github.com/mcgnly/storyflip" target="_blank" title="videos to flipbook converter">Storyflip</a>
+					<p>Convert a digital video into a physical flipbook! Available in two formats- print yourself, or send it to me to have it professionally printed and sent to you for a small price. I wanted to build a webapp from the bottom up- so this was the project I chose. The frontend is built on react, the backend with express, and it is deployed with docker, so I got to learn a lot of new things along the way.
+						 Available at:
+						<a href="https://www.storyflip.me" target="_blank" title="videos to flipbook converter">Storyflip.me</a>
+					</p>
+				</li> 
+				<li class="projectsItem" tabindex="0">
+					<a class="projectsLink" href="https://github.com/mcgnly/alexa-iss" target="_blank" title="silly amazon alexa app">Amazon Alexa Space Station Locater</a>
+					<p>As part of my interest in developing my skills in different directions, I learned how to build apps for the Amazon Alexa. This is the third in a series of apps I built for Amazon Alexa, and for whatever reason the most successful. It takes the current time and returns the point on Earth over which the International Space Station is at this very second. Built using Node and Amazon Lambda. Available at:
+						<a href="https://www.amazon.com/mcgnly-Space-Station/dp/B01MZ2ONRB/ref=sr_1_2?s=digital-skills&ie=UTF8&qid=1486298736&sr=1-2&keywords=mcgnly" target="_blank" title="silly amazon alexa app">Amazon Alexa app store</a>
 					</p>
 				</li> 
 				<li class="projectsItem" tabindex="0">
@@ -62,31 +70,15 @@
 					<p>While I was teaching a couple of people development in react and how to incorporate redux, I built a tool to explain the basics and make it easy to interact with different elements to better understand how they fit together. Built using create-react-app, redux, less, and gulp.</p>
 				</li> 
 				<li class="projectsItem" tabindex="0">
-					<a class="projectsLink" href="https://github.com/relayr/browser-sdk" target="_blank" title="javascript IOT tools">relayr Browser SDK</a>
-					<p>APIs make it possible for the average developer to interact with a given set of server-side functions and data, but SDKs make that job even easier, by abstracting away the tasks of making AJAX calls, interacting with OAuth, and other internal details. The browser SDK built for relayr makes it easy for a developer to use standard javascript to interact with their IOT devices and use the data for whatever projects they might have in mind. Built using ES6 and Webpack. </p>
+					<a class="projectsLink" href="https://github.com/mcgnly/email-keyword" target="_blank" title="follow Amanda Palmer on tour">AFP-Alert</a>
+					<p>Amanda Palmer is an American musician who tours a lot, and has a tendency to do free concerts here and there with short notice given on Twitter. I created a tool to watch her twitter and send out an email alert when she mentions a chosen town, so that people who sign up for the service will know if she is thinking of coming to their area. Tool and website built with meteor, database to hold collections of emails and keywords on Mongo, hosted on AWS. Available at: 
+						<a href="http://afp-alert.mcgnly.com/" target="_blank" title="afp-alert">AFP-Alert.mcgnly.com</a>
+					</p>
 				</li>  
 				<li class="projectsItem" tabindex="0">
 					<a class="projectsLink" href="https://github.com/mcgnly/99-bottles" target="_blank" title="small IOT dashboard">99 Bottles</a>
-					<p>Using the relayr browser SDK, I built a dashboard and small tool which, when paired with an IOT enabled scale, can report the number of bottles left in a case of beer. This concept can of course be extended to report any kind of weight-based counting task with recalibration of the scale. Developed as a demo for a large German grocery chain. Built using ES6, JQuery, and Webpack. </p>
+					<p>Using the <a href="https://github.com/relayr/browser-sdk" target="_blank" title="javascript IOT tools">relayr Browser SDK</a> (which I also developed at a previous job), I built a dashboard and small tool which, when paired with an IOT enabled scale, can report the number of bottles left in a case of beer. This concept can of course be extended to report any kind of weight-based counting task with recalibration of the scale. Developed as a demo for a large German grocery chain. Built using ES6, JQuery, and Webpack. </p>
 				</li>  
-				<li class="projectsItem" tabindex="0">
-					<a class="projectsLink" href="https://github.com/mcgnly/alexa-catfacts" target="_blank" title="silly amazon alexa app">Amazon Alexa Cat-Facts</a>
-					<p>As part of my interest in developing my skills in different directions, I learned how to build apps for the Amazon Alexa. These use voice-control to accomplish different tasks- in this case, to poll an API for a random fact about cats, and return the information to the user also over speech. Built using Node and Amazon Lambda. Available at:
-						<a href="https://www.amazon.com/mcgnly-Cat-Facts/dp/B01NAIJLDB/ref=sr_1_1?s=digital-skills&ie=UTF8&qid=1486298581&sr=1-1&keywords=mcgnly" target="_blank" title="silly amazon alexa app">Amazon Alexa app store</a>
-					</p>
-				</li>  
-				<li class="projectsItem" tabindex="0">
-					<a class="projectsLink" href="https://github.com/mcgnly/alexa-cooking" target="_blank" title="silly amazon alexa app">Amazon Alexa Meat Thermometer</a>
-					<p>The second in a series of apps built for Amazon Alexa, this app has a database of cooking temperatures for common cuts of meat, and interacts with the user over voice. I was tired of always having to look up the temperature for pork tenderlion...  Built using Node and Amazon Lambda. Available at: 
-						<a href="https://www.amazon.com/mcgnly-Meat-Thermometer/dp/B01MRYWBBJ/ref=sr_1_3?s=digital-skills&ie=UTF8&qid=1486298581&sr=1-3&keywords=mcgnly" target="_blank" title="silly amazon alexa app">Amazon Alexa app store</a>
-					</p>
-				</li> 
-				<li class="projectsItem" tabindex="0">
-					<a class="projectsLink" href="https://github.com/mcgnly/alexa-iss" target="_blank" title="silly amazon alexa app">Amazon Alexa Space Station Locater</a>
-					<p>Third in a series of apps built for Amazon Alexa. This one takes the current time and returns the point on Earth over which the International Space Station is at this very second. Built using Node and Amazon Lambda. Available at:
-						<a href="https://www.amazon.com/mcgnly-Space-Station/dp/B01MZ2ONRB/ref=sr_1_2?s=digital-skills&ie=UTF8&qid=1486298736&sr=1-2&keywords=mcgnly" target="_blank" title="silly amazon alexa app">Amazon Alexa app store</a>
-					</p>
-				</li> 
 				<li class="projectsItem" tabindex="0">
 					<a class="projectsLink" href="https://github.com/mcgnly/million_monkeys" target="_blank" title="python toy">Million Monkeys</a>
 					<p>An infinite number of monkeys on infinite typewriters given infinite time would eventually be able to produce the collected works of Shakespeare...As part of the process of learning to use Python, I developed a toy command-line app that, when given a particular string, will replicate it using randomly generated characters, and count the number of repetitions it takes to recreate the given word or phrase.</p>
