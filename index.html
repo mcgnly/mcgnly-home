@@ -4,84 +4,138 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico"> -->
-	<title>React App</title>
+	<title>mcgnly</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="icon" 
+      type="image/png" 
+      href="img/favicon-space-shuttle.ico">
   </head>
 
   <body>
+  	<a class="hidden" href="#aboutMe">Skip to Content</a>
+	<section class="navbar">
+		<ul class="navbarLinks">
+			<li><a href="#aboutMe" class="about">About Me</a></li>
+			<li><a href="#work">Work</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="#aboutHere">This Website</a></li>
+		</ul>
+	</section>
 	<section class="module parallax parallax-1">
 		<div class="container">
-			<h1>mcgnly</h1>
+			<h1 tabindex="0" id="aboutMe">mcgnly</h1>
 		</div>
 	</section>
 
-	<section class="module content">
+	<section class="module content about">
 		<div class="container">
-			<h2>About Me</h2>
-			<p>Hi! I'm Katie, a web developer specialising in frontend design. I have a deep, dark past as a mechanical engineer, and a passion for hacking, building, solving problems, travel, cooking, and learning languages... if you count computer and human languages, I've got 8 so far. 
+			<h2 tabindex="0">About Me</h2>
+			<p tabindex="0">
+				Hi! I'm Katie, a fullstack developer located in Berlin, Germany, though I particularly like react and express. I have a past as a mechanical engineer, and a passion for building things, solving problems, travel, and learning languages... I have studied French, Italian, German, Irish Gaelic, Thai, Spanish, and am currently learning modern Greek... but I work primarily in javascript. I also enjoy building silly projects in my free time, and getting better at backend and devops.
 			</p>
 		</div>
 	</section>
 
 	<section class="module parallax parallax-2">
 		<div class="container">
-			<h1>Work</h1>
+			<h1 tabindex="0" id="work">Work</h1>
 		</div>
 	</section>
 
-	<section class="module content">
+	<section class="module content projects">
 		<div class="container">
-			<h2>Here you can find a brief sample of my projects so far.</h2>
-			<ul>
-				<li>
-					<p>afp-alert</p>
-					<section class = "afp"></section>
-				</li>
-				<li>
-					<p>architectin</p>
-					<section class = "architectin"></section>
+			<h2 tabindex="0">Here you can find a few of my projects so far.</h2>
+			<ul class="projects">
+				<li class="projectsItem" tabindex="0">
+					<a class="projectsLink" href="https://github.com/mcgnly/storyflip" target="_blank" title="videos to flipbook converter">Storyflip</a>
+					<p>Convert a digital video into a physical flipbook! Available in two formats- print yourself, or send it to me to have it professionally printed and sent to you for a small price. I wanted to build a webapp from the bottom up- so this was the project I chose. The frontend is built on react, the backend with express, and it is deployed with docker, so I got to learn a lot of new things along the way.
+						 Available at:
+						<a href="https://www.storyflip.me" target="_blank" title="videos to flipbook converter">Storyflip.me</a>
+					</p>
+				</li> 
+				<li class="projectsItem" tabindex="0">
+					<a class="projectsLink" href="https://github.com/mcgnly/alexa-iss" target="_blank" title="silly amazon alexa app">Amazon Alexa Space Station Locater</a>
+					<p>As part of my interest in developing my skills in different directions, I learned how to build apps for the Amazon Alexa. This is the third in a series of apps I built for Amazon Alexa, and for whatever reason the most successful. It takes the current time and returns the point on Earth over which the International Space Station is at this very second. Built using Node and Amazon Lambda. Available at:
+						<a href="https://www.amazon.com/mcgnly-Space-Station/dp/B01MZ2ONRB/ref=sr_1_2?s=digital-skills&ie=UTF8&qid=1486298736&sr=1-2&keywords=mcgnly" target="_blank" title="silly amazon alexa app">Amazon Alexa app store</a>
+					</p>
+				</li> 
+				<li class="projectsItem" tabindex="0">
+					<a class="projectsLink" href="https://github.com/mcgnly/volunqueer" target="_blank" title="volunteer in the LGBT community">Volunqueer</a>
+					<p>The LGBTQ community is full of organizations that could use some love! If you have wanted to volunteer, but are not sure which organization to reach out to, this website can help you get started. As a volunteer, you can filter the suggestions based on your interests and the kind of work which you would like to do, and sign up for a weekly digest of new volunteer opportunities that match your interests. As an organization, you can post volunteer positions quickly, and find people wanting to give back to the community! Winner of the 2017 Unicorns in Tech Hackathon. Available at: 
+						<a href="http://volunqueer.herokuapp.com/" target="_blank" title="afp-alert">volunqueer.herokuapp.com/</a>
+					</p>
+				</li> 
+				<li class="projectsItem" tabindex="0">
+					<a class="projectsLink" href="https://github.com/mcgnly/basic-redux" target="_blank" title="teaching tool for react and redux">Basic Redux</a>
+					<p>While I was teaching a couple of people development in react and how to incorporate redux, I built a tool to explain the basics and make it easy to interact with different elements to better understand how they fit together. Built using create-react-app, redux, less, and gulp.</p>
+				</li> 
+				<li class="projectsItem" tabindex="0">
+					<a class="projectsLink" href="https://github.com/mcgnly/email-keyword" target="_blank" title="follow Amanda Palmer on tour">AFP-Alert</a>
+					<p>Amanda Palmer is an American musician who tours a lot, and has a tendency to do free concerts here and there with short notice given on Twitter. I created a tool to watch her twitter and send out an email alert when she mentions a chosen town, so that people who sign up for the service will know if she is thinking of coming to their area. Tool and website built with meteor, database to hold collections of emails and keywords on Mongo, hosted on AWS. Available at: 
+						<a href="http://afp-alert.mcgnly.com/" target="_blank" title="afp-alert">AFP-Alert.mcgnly.com</a>
+					</p>
 				</li>  
-				<li>
-					<p>notification service</p>
-					<section class = "notification"></section>
-				</li>
-				<li>
-					<p>this portfolio</p>
-					<section class = "portfolio"></section>
-				</li>                          
-			</ul>
-		</div>
-	</section>
-
-	<section class="module parallax parallax-3">
-		<div class="container">
-			<h1>Contact</h1>
-		</div>
-	</section>
-
-	<section class="module content">
-		<div class="container">
-			<h2>Contact Me:</h2>
-			<ul>
-				<p>katie@mcgnly.com</p>
-				<p>github: mcgnly</p>
-				<p>linkedin: mcgnly</p>
+				<li class="projectsItem" tabindex="0">
+					<a class="projectsLink" href="https://github.com/mcgnly/99-bottles" target="_blank" title="small IOT dashboard">99 Bottles</a>
+					<p>Using the <a href="https://github.com/relayr/browser-sdk" target="_blank" title="javascript IOT tools">relayr Browser SDK</a> (which I also developed at a previous job), I built a dashboard and small tool which, when paired with an IOT enabled scale, can report the number of bottles left in a case of beer. This concept can of course be extended to report any kind of weight-based counting task with recalibration of the scale. Developed as a demo for a large German grocery chain. Built using ES6, JQuery, and Webpack. </p>
+				</li>  
+				<li class="projectsItem" tabindex="0">
+					<a class="projectsLink" href="https://github.com/mcgnly/million_monkeys" target="_blank" title="python toy">Million Monkeys</a>
+					<p>An infinite number of monkeys on infinite typewriters given infinite time would eventually be able to produce the collected works of Shakespeare...As part of the process of learning to use Python, I developed a toy command-line app that, when given a particular string, will replicate it using randomly generated characters, and count the number of repetitions it takes to recreate the given word or phrase.</p>
+				</li> 
+				<li class="projectsItem" tabindex="0">
+					<a class="projectsLink" href="https://github.com/mcgnly/mcgnly-home" target="_blank" title="portfolio page">mcgnly</a>
+					<p>The source code for this page! My focus here was creating a concise overview of the projects I have worked on until now, a place to host my resume, and to learn concepts relating to accessibility. Deployed on Github-pages.</p>
+				</li> 
 			</ul>
 		</div>
 	</section>
 
 	<section class="module parallax parallax-4">
 		<div class="container">
-			<h1>This website:</h1>
+			<h1 tabindex="0" id="aboutHere">This page</h1>
 		</div>
 	</section>
 
   	<section class="module content">
 		<div class="container">
-			<h2>Notes on Design</h2>
-			<p>This website was made with accessability in mind. Fill in the reasons why here: XXXXXXXX</p>
+			<h2 tabindex="0">Notes on Design</h2>
+			<p tabindex="0">This website was made with accessibility in mind.</p>
+			<ul class="accessibility">
+				<li tabindex="0">
+					<p>Contrast: according to best practices set forth by WCAG AAA standard, the contrast between normal-sized text and background should be a minimum of 7:1. On this page it is 7.14:1</p>
+				</li>
+				<li tabindex="0">
+					<p>Colors: the palette here was kept to a relatively monochromatic scale, in order to be readable by people with different forms of color blindness, and the text is slightly darker than white in order to be more readable by people with dyslexia.</p>
+				</li>  
+				<li tabindex="0">
+					<p>Screen readers: this page is tab-through-able, and on the first tab reveals a "skip to content" button, which bypasses the navbar.</p>
+				</li>                       
+			</ul>
 		</div>
 	</section>
 
+	<section class="module parallax parallax-3">
+		<div class="container">
+			<h1 tabindex="0" id="contact">Contact</h1>
+		</div>
+	</section>
+
+	<section class="module content">
+		<div class="container">
+			<h2 tabindex="0">Contact Me:</h2>
+			<ul class="contact" tabindex="0">
+				<li>
+					<a href="mailto:katie@mcgnly.com" title="The shorter it is, the quicker I can reply">Email: katie@mcgnly.com</a>
+				</li>
+				<li>
+					<a href="https://github.com/mcgnly" target="_blank" title="See some things I made for the internet">GitHub: mcgnly</a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/mcgnly/" target="_blank" title="Social networking for adults">Linkedin: mcgnly</a>
+				</li>	
+			</ul>
+		</div>
+	</section>
   </body>
 </html>
